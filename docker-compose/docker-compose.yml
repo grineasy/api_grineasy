@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  grineasy-api:
+    image: postgres
+    restart: always
+    container_name: grineasy-postgres
+    environment:
+      POSTGRES_DB: grineasy
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
