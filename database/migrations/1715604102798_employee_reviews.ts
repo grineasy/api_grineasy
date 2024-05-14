@@ -8,7 +8,7 @@ export default class EmployeeReviews extends BaseSchema {
       table.increments('id').notNullable()
       table.integer('user_id').notNullable()
       table.integer('comment').notNullable()
-      table.integer('id_ company').notNullable()
+      table.integer('company_id').notNullable()
       table.timestamp('created_at').notNullable()
       table.timestamp('updated_at').nullable()
     })
