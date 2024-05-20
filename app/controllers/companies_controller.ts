@@ -8,8 +8,7 @@ export default class CompaniesController {
     return companies
   }
 
-  async getUser({ response, auth }: HttpContext) {
-
+  async getUser({}: HttpContext) {
     const user = await User.query().preload('company')
     return user
   }

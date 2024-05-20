@@ -12,6 +12,7 @@ export default class extends BaseSchema {
       table.string('email', 254).notNullable().unique()
       table.string('password').notNullable()
       table.integer('admin').nullable()
+      table.string('role', 80).nullable() // 'employee', 'company', or 'happiness_officer'
       table.timestamp('created_at').notNullable()
       table.timestamp('updated_at').nullable()
     })

@@ -6,7 +6,7 @@ export default class ArticleWeb extends BaseSchema {
   async up() {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id').notNullable()
-      table.bigInteger('user_id').notNullable()
+      table.integer('user_id').notNullable()
       table.string('title').notNullable()
       table.string('content').notNullable()
       table.string('image').notNullable()
