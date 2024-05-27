@@ -11,7 +11,7 @@ export default class Messages extends BaseSchema {
         .integer('conversation_id')
         .unsigned()
         .references('id')
-        .inTable('conversations')
+        .inTable('conversation')
         .nullable()
       table.text('content').notNullable()
       table.timestamp('created_at').notNullable()

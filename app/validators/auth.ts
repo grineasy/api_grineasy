@@ -21,6 +21,6 @@ export const registerValidator = vine.compile(
       }),
     password: vine.string().minLength(8).maxLength(32),
     company_id: vine.number().optional(),
-    role: vine.string().optional(),
+    role: vine.string(),
   })
 )
